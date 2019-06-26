@@ -1,0 +1,19 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Test node libs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "test": "jest --watchAll"
+  },
+  "dependencies": {
+    "express": "~4.16.0",
+    "mongoose": "^5.0.11"
+  },
+  "author": "Sonia Kaushal",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
