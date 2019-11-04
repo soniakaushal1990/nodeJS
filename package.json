@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "express": "~4.16.0",
-    "mongoose": "^5.0.11"
+    "mongoose": "^5.7.5"
   },
   "author": "Sonia Kaushal",
   "license": "ISC",
