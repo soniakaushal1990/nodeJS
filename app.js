@@ -1,29 +1,29 @@
+const express = require('express');
+const httperrors = require('http-errors');
+const bodyparser =require('body-parser');
+const port = 3000;
+const app = express();
+
+//parse application/x-www-form-urlencoded
+
+app.use(bodyparser.urlencoded({extended:false}));
 
 
-var express = require('express');
-var app = express();
-var mongoose = require('mongoose');
-const userRouter = require('./routes/user');
-var context = require('./context/context');
-//how application level middle ware works
-app.use((req,res,next)=>{
-  //console.log(date.now);
-  req.name = "Sonia Kaushal";
-  next();
-});
-app.get('/',(req,res)=>{
-  res.send("Index Router is working");
-});
-app.use('/users',userRouter);
-context.initialize();
+//parse application/json
+
+app.use(bodyparser.json());
+
 
 
 
 
 /*
-Start the server on PORT 5000 
+
+Start the server at Port 3000
+
 */
-const port = 5000;
+
 app.listen(port,function(){
-    console.log("Server started on port "+port);
-});
+    console.log(`App listening at port ${port}`);
+})
+
