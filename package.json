@@ -8,7 +8,7 @@
     "test": "jest --watchAll"
   },
   "dependencies": {
-    "express": "~4.16.0",
+    "express": "~4.17.3",
     "mongoose": "^5.0.11"
   },
   "author": "Sonia Kaushal",
